@@ -1,0 +1,18 @@
+ng serve
+npm install
+cd "directory"
+
+COMPONENTS & SERVICES
+
+ng generate component "name"
+ng generate service "name"
+
+ROUTING
+
+ng generate module app-routing --flat --module=app
+ng generate component dashboard
+
+HTTP
+
+npm install angular-in-memory-web-api --save
+ng generate service InMemoryData
