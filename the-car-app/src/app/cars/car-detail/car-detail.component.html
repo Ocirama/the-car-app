@@ -1,0 +1,16 @@
+<div *ngIf="car">
+
+  <h2>{{car.carBrand | uppercase}} {{car.carModel}} Details</h2>
+  <div class="car-data">
+
+    <div> Metai: {{ car.carYear }}</div>
+    <div>Kaina:{{car.carPrice}} €</div>
+    <div> Remonto kaina: {{ car.carRepairPrice }} €</div>
+  </div>
+  <img [src]="car.carImage"/>
+
+  <!--<button (click)="sellCar(car)"> Sell</button>-->
+</div>
+  <button (click)="goBack()">go To Your Garage</button>
+
+

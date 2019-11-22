@@ -1,0 +1,49 @@
+<h2>Get your car here</h2>
+
+<ul class="cars">
+  <li *ngFor="let car of cars"
+      [class.selected]="car === selectedCar"
+      (click)="onSelect(car)">
+    <span class="badge">{{car.carBrand}}</span> {{car.carModel}}
+  </li>
+</ul>
+<!--<h2>DEALERSHIP</h2>
+
+<p>Get your car here</p>
+<h2>CARS</h2>
+<h2> My profit: {{ profit }}</h2>
+<div class="container">
+  <div class="car" *ngFor="let car of cars">
+    <div class="car-data">
+      <p>Markė:
+        <a routerLink="/detail/{{car.carBrand}}">
+          <span class="brand">{{car.carBrand}}</span></a>
+        <div>Modelis:</div>
+        <span class="brand">{{car.carModel}}</span>
+
+        <div>Metai:</div>
+
+        <span class="brand">{{car.carYear}}</span>
+
+        <div>Kaina:</div>
+        {{ getCarPrice(car.carPrice) }}
+
+        <span class="brand">{{car.carPrice}}</span>
+
+        <div>Remonto kaina:</div>
+
+      <span class="brand">{{car.carRepairPrice}}</span>
+        <img [src]="car.carImage"/>
+        <button (click)="sellCar(car)"> Buy</button>
+      </div>
+    </div>
+  </div>-->
+<app-car-detail [car]="selectedCar"></app-car-detail>
+  <!--<p>{{car.brand | uppercase}} Details</p>
+  <div><span>Brand: </span>{{car.brand}}</div>
+  <div><span>Model: </span>{{car.model}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="car.brand" placeholder="name"/>
+    </label>
+  </div>-->
